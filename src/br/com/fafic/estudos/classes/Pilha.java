@@ -27,6 +27,13 @@ public class Pilha {
 		}
 		return false;
 	}
+	
+	public boolean isFull() {
+		if (tamanhoReal == elementos.length) {
+			return true;
+		}
+		return false;
+	}
 
 	public int top() {
 		return elementos[tamanhoReal-1];
